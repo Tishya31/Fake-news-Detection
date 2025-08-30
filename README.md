@@ -1,32 +1,36 @@
 # Fake-news-Detection
-# 📰 Fake News Detection using NLP & Machine Learning
+# 📰 Fake News Detection
 
 ## 📌 Problem Statement
-Fake news on social media misleads people. This project builds an **AI tool** to detect whether a news article is **real** or **fake**.
+Fake news on social media misleads people.  
+This project builds an **AI tool** to classify news articles as **Real** or **Fake**.
 
 ---
 
 ## 🎯 Objective
-- Use **Natural Language Processing (NLP)** and **Machine Learning** to classify news articles as **real or fake**.
-- Demonstrate preprocessing (tokenization, stopword removal, TF-IDF).
-- Train and evaluate classifiers (Passive Aggressive, SVM, etc.).
+Use **NLP and Machine Learning** to detect fake news automatically.
 
 ---
 
-## 📂 Dataset
-Use any labeled fake news dataset, e.g.:
-- [Fake News Dataset on Kaggle](https://www.kaggle.com/c/fake-news/data)
-
-Ensure the dataset has:
-- `text`: news article body
-- `label`: real or fake
-
-Save the dataset as **`news.csv`** in the project folder.
+## 🛠 Requirements
+- Dataset: labeled news articles (e.g., [news.csv](https://raw.githubusercontent.com/laxmimerit/fake-news-detection/main/news.csv))
+- Preprocessing:
+  - Tokenization
+  - Remove stopwords
+  - TF-IDF vectorization
+- Algorithms:
+  - Passive Aggressive Classifier
+  - (Optional: SVM, Logistic Regression)
+- Evaluation:
+  - Accuracy
+  - F1 Score
+  - Confusion Matrix
 
 ---
 
-## ⚙️ Requirements
-Install required Python libraries:
-```bash
-pip install pandas numpy scikit-learn
-
+## 🚀 Steps to Run (Google Colab)
+1. Open [Google Colab](https://colab.research.google.com/)
+2. Upload the notebook or copy code from this repo
+3. Install dependencies:
+   ```bash
+   pip install scikit-learn pandas numpy
